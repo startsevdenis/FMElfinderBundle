@@ -74,6 +74,7 @@ class ElFinderConfigurationReader implements ElFinderConfigurationProviderInterf
         $options['plugins']     = $parameters['connector']['plugins'];
         $options['roots']       = array();
 
+
         foreach ($parameters['connector']['roots'] as $parameter) {
             $path       = $parameter['path'];
             $homeFolder = $request->attributes->get('homeFolder');
@@ -126,6 +127,9 @@ class ElFinderConfigurationReader implements ElFinderConfigurationProviderInterf
                 'timeFormat'        => $parameter['time_format'],
                 'archiveMimes'      => $parameter['archive_mimes'],
                 'archivers'         => $parameter['archivers'],
+                'encoding'          => $parameters['encoding'],
+                'locale'            => $parameters['locale']
+
             );
 
             if ($parameter['volume_id'] > 0) {
@@ -172,6 +176,7 @@ class ElFinderConfigurationReader implements ElFinderConfigurationProviderInterf
     {
         switch ($adapter) {
             case 'local':
+
                 $filesystem = new Filesystem(new Local($opt['local']['path']));
                 break;
             case 'ftp':

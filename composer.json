@@ -1,5 +1,5 @@
 {
-    "name": "helios-ag/fm-elfinder-bundle",
+    "name": "startsevdenis/fm-elfinder-bundle",
     "description": "ElFinder bundle, adds ElFinder file manager to your Symfony2 project",
     "keywords": ["elfinder","file manager"],
     "type": "symfony-bundle",
@@ -8,8 +8,8 @@
     "minimum-stability": "dev",
     "authors": [
         {
-            "name": "Al Ganiev",
-            "email": "helios.ag@gmail.com"
+            "name": "Startsev Denis",
+            "email": "startsevdenis@gmail.com"
         },
         {
             "name": "Symfony Community",
@@ -24,7 +24,7 @@
         "symfony/framework-bundle":            "~2.4|~3.0",
         "symfony/twig-bundle":                 "~2.4|~3.0",
         "symfony/form":                        "~2.4|~3.0",
-        "helios-ag/fm-elfinder-php-connector": "~2.0",
+        "startsevdenis/fm-elfinder-php-connector": "~2.0",
         "components/elfinder": "~2.0"
     },
     "require-dev" : {
