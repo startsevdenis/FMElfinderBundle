@@ -3,7 +3,7 @@
     "description": "ElFinder bundle, adds ElFinder file manager to your Symfony2 project",
     "keywords": ["elfinder","file manager"],
     "type": "symfony-bundle",
-    "homepage": "https://github.com/helios-ag/FMElfinderBundle",
+    "homepage": "https://github.com/startsevdenis/FMElfinderBundle",
     "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
@@ -24,7 +24,7 @@
         "symfony/framework-bundle":            "~2.4|~3.0",
         "symfony/twig-bundle":                 "~2.4|~3.0",
         "symfony/form":                        "~2.4|~3.0",
-        "startsevdenis/fm-elfinder-php-connector": "~2.0",
+        "startsevdenis/fm-elfinder-php-connector": "dev-master",
         "components/elfinder": "~2.0"
     },
     "require-dev" : {
